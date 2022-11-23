@@ -1,0 +1,77 @@
+.container
+{
+    margin:auto;
+    
+    max-width: 450px;
+    height: 400px;
+    perspective: 600px;
+    background-color:beige;    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.card
+{
+    margin:10px;
+    width: 80px;
+    height: 80px;
+    position: relative; 
+    transition:1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.card_face
+{
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.front
+{
+   background-image:linear-gradient(#e12b95,#c324dc);
+}
+.back
+{  
+   transform: rotateY(180deg);
+}
+img
+ {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+ }
+h1
+{
+    text-align: center;
+}
+.card.flipped 
+{
+    transform: rotateY(180deg);
+}
+
+.gameinfo
+{
+    margin: auto;
+    width: 450px;
+    height:80px;
+    display: flex;    
+    justify-content: space-between;
+}
+.gamestart
+{
+    margin-left: 550px;
+}
+.startbutton
+{
+    background-color: #c324dc;
+    font-size: 25px;
+}
+.counterlabel
+{
+    margin-top: 20px;
+    margin-left: -250px;
+}
